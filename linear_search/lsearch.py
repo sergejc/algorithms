@@ -1,7 +1,7 @@
 import sys
 
 def find_pos(n, lst):
-    """Return position in the list
+    """Returns index of element in the list
     >>> find_pos(1, [1, 7, 2, 20, 0])
     0
     >>> find_pos(20, [1, 7, 2, 20, 0])
@@ -17,7 +17,7 @@ def find_pos(n, lst):
     return -1;
 
 def find_pos_rec(n, lst):
-    """Return position in the list
+    """Returns index of element in the list
     >>> find_pos_rec(1, [1, 7, 2, 20, 0])
     0
     >>> find_pos_rec(20, [1, 7, 2, 20, 0])
@@ -33,3 +33,9 @@ def find_pos_rec(n, lst):
         return len(lst)
 
     return find_pos_rec(n, lst)
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+

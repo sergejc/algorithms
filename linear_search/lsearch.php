@@ -1,7 +1,7 @@
 <?php
 
 /**
- * complexity O(n)
+ * complexity O(N)
  */
 function findPos($n, $arr) {
     for($i = 0, $len = count($arr); $i < $len; $i++) {
